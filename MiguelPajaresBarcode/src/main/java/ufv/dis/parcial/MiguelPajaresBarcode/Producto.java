@@ -1,7 +1,13 @@
 package ufv.dis.parcial.MiguelPajaresBarcode;
 
+import java.io.IOException;
+import java.nio.file.FileSystems;
+import java.nio.file.Path;
+
 import com.google.zxing.*;
+import com.google.zxing.client.j2se.MatrixToImageWriter;
 import com.google.zxing.common.BitMatrix;
+import com.google.zxing.oned.EAN13Writer;
 
 public class Producto {
 
@@ -47,9 +53,5 @@ public class Producto {
 				" EAN13: " + this.getEAN13();
 	}
 	
-	public BitMatrix encode(BarcodeFormat format, int width, int height) {
-		
-		return encode(format, width, height);
-	}
-	
+
 }
