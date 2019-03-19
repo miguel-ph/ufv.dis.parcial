@@ -1,5 +1,7 @@
 package ufv.dis.parcial.MiguelPajaresBarcode;
 
+import com.google.zxing.*;
+import com.google.zxing.common.BitMatrix;
 
 public class Producto {
 
@@ -43,6 +45,11 @@ public class Producto {
 		return "Nombre: " + this.getNombre() +
 				" Marca: " + this.getMarca() +
 				" EAN13: " + this.getEAN13();
+	}
+	
+	public BitMatrix encode(BarcodeFormat format, int width, int height) {
+		
+		return encode(format, width, height);
 	}
 	
 }

@@ -2,6 +2,9 @@ package ufv.dis.parcial.MiguelPajaresBarcode;
 
 import java.util.ArrayList;
 
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.common.BitMatrix;
+
 
 public class App 
 {
@@ -26,6 +29,8 @@ public class App
             System.out.println(a);
 
         }
+        
+        
 
     }
 }
